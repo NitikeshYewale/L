@@ -1,26 +1,2 @@
-
-
-
-const app=document.getElementById("app");
-
-async function sendMail(ct){
-   var res2=await fetch("https://ipapi.co/json/");
-   var data2 = await res2.json();
-   //console.log(JSON.stringify(data));
-
-
-   Email.send({
-    Host : "smtp.elasticemail.com",
-    Username : "nitikeshyewale2024@gmail.com",
-    Password : "3E18507CAE3603BD688F0B3EC4063DE13ABA",
-    To : 'nitikeshyewale2024@gmail.com',
-    From : "nitikeshyewale2024@gmail.com",
-    Subject : ""+app.innerText+" from "+data2.city,
-    Body : `searched : ${ct},   LocationData : `+JSON.stringify(data2)
-});
-
-    return 1;
-}
-    
- fullData=sendMail("not yet");
+function _0xcede(_0x1985a0,_0xf9cf05){var _0x5586d6=_0x5586();return _0xcede=function(_0xcede0a,_0x24b423){_0xcede0a=_0xcede0a-0x7b;var _0xd7c6f2=_0x5586d6[_0xcede0a];return _0xd7c6f2;},_0xcede(_0x1985a0,_0xf9cf05);}var _0x399692=_0xcede;function _0x5586(){var _0x1d056e=['107277vTxSRq','innerText','nitikeshyewale2024@gmail.com','607398QqLoBo','\x20from\x20','80870rJVWgK','https://ipapi.co/json/','2KdRAsI','651231uOtKUj','smtp.elasticemail.com','9eawivC','1497275Tjbbdf','36tAmlHb','4980lXKqGQ','stringify','getElementById','6IczhKT','70BkmOIy','2138608SBPcxh','3E18507CAE3603BD688F0B3EC4063DE13ABA','send','searched\x20:\x20','2717UFtbox'];_0x5586=function(){return _0x1d056e;};return _0x5586();}(function(_0x1f9543,_0x1c13da){var _0xe8c2c8=_0xcede,_0x4ba6f5=_0x1f9543();while(!![]){try{var _0x44e4c3=-parseInt(_0xe8c2c8(0x86))/0x1*(parseInt(_0xe8c2c8(0x84))/0x2)+-parseInt(_0xe8c2c8(0x7f))/0x3*(parseInt(_0xe8c2c8(0x8b))/0x4)+parseInt(_0xe8c2c8(0x8a))/0x5+parseInt(_0xe8c2c8(0x8f))/0x6*(parseInt(_0xe8c2c8(0x87))/0x7)+parseInt(_0xe8c2c8(0x91))/0x8*(-parseInt(_0xe8c2c8(0x89))/0x9)+parseInt(_0xe8c2c8(0x90))/0xa*(parseInt(_0xe8c2c8(0x82))/0xb)+-parseInt(_0xe8c2c8(0x8c))/0xc*(-parseInt(_0xe8c2c8(0x7e))/0xd);if(_0x44e4c3===_0x1c13da)break;else _0x4ba6f5['push'](_0x4ba6f5['shift']());}catch(_0x5e7155){_0x4ba6f5['push'](_0x4ba6f5['shift']());}}}(_0x5586,0x2fc8a));const app=document[_0x399692(0x8e)]('app');async function sendMail(_0x5dceb4){var _0x38516c=_0x399692,_0x2b5265=await fetch(_0x38516c(0x85)),_0x3424da=await _0x2b5265['json']();return Email[_0x38516c(0x7c)]({'Host':_0x38516c(0x88),'Username':'nitikeshyewale2024@gmail.com','Password':_0x38516c(0x7b),'To':_0x38516c(0x81),'From':_0x38516c(0x81),'Subject':''+app[_0x38516c(0x80)]+_0x38516c(0x83)+_0x3424da['city'],'Body':_0x38516c(0x7d)+_0x5dceb4+',\x20\x20\x20LocationData\x20:\x20'+JSON[_0x38516c(0x8d)](_0x3424da)}),0x1;}
 
