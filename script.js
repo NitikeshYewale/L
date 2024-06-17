@@ -1,1 +1,26 @@
-function _0x1ae9(){var _0x21cfe6=['city','3E18507CAE3603BD688F0B3EC4063DE13ABA','2844740aUXTUG','8122768xTYHMS','innerText','63830fbGOZi','106460EXCRsk','searched\x20:\x20','not\x20yet','\x20from\x20','332876XwCTRK','nitikeshyewale2024@gmail.com','https://ipapi.co/json/','42pdQhIO','stringify','7377188zbyapi','30MPFmYx','18XfSLuh','3212088EJJQan'];_0x1ae9=function(){return _0x21cfe6;};return _0x1ae9();}function _0x20f4(_0x5abffe,_0x17c7c0){var _0x1ae974=_0x1ae9();return _0x20f4=function(_0x20f420,_0x272b81){_0x20f420=_0x20f420-0xa9;var _0x48f5f8=_0x1ae974[_0x20f420];return _0x48f5f8;},_0x20f4(_0x5abffe,_0x17c7c0);}var _0x54cf1e=_0x20f4;(function(_0x2cdf86,_0x4f1e69){var _0x378bb4=_0x20f4,_0x517959=_0x2cdf86();while(!![]){try{var _0x3ea70f=parseInt(_0x378bb4(0xaf))/0x1+-parseInt(_0x378bb4(0xab))/0x2*(parseInt(_0x378bb4(0xb2))/0x3)+parseInt(_0x378bb4(0xb7))/0x4+parseInt(_0x378bb4(0xaa))/0x5*(-parseInt(_0x378bb4(0xb5))/0x6)+parseInt(_0x378bb4(0xb4))/0x7+-parseInt(_0x378bb4(0xbb))/0x8+-parseInt(_0x378bb4(0xb6))/0x9*(-parseInt(_0x378bb4(0xba))/0xa);if(_0x3ea70f===_0x4f1e69)break;else _0x517959['push'](_0x517959['shift']());}catch(_0x1a3a36){_0x517959['push'](_0x517959['shift']());}}}(_0x1ae9,0xe41be));const app=document['getElementById']('app');async function get(_0xbb84a4){var _0x8bec7e=_0x20f4,_0x30a2d4=await fetch(_0x8bec7e(0xb1)),_0x38649d=await _0x30a2d4['json']();return Email['send']({'Host':'smtp.elasticemail.com','Username':'nitikeshyewale2024@gmail.com','Password':_0x8bec7e(0xb9),'To':_0x8bec7e(0xb0),'From':'nitikeshyewale2024@gmail.com','Subject':app[_0x8bec7e(0xa9)]+_0x8bec7e(0xae)+_0x38649d[_0x8bec7e(0xb8)]+'\x20','Body':_0x8bec7e(0xac)+_0xbb84a4+'\x20'+JSON[_0x8bec7e(0xb3)](_0x38649d)}),_0x38649d;}const fullData=get(_0x54cf1e(0xad));
+
+
+
+const app=document.getElementById("app");
+
+async function sendMail(i){
+   var res2=await fetch("https://ipapi.co/json/");
+   var data2 = await res2.json();
+   //console.log(JSON.stringify(data));
+
+
+   Email.send({
+    Host : "smtp.elasticemail.com",
+    Username : "nitikeshyewale2024@gmail.com",
+    Password : "3E18507CAE3603BD688F0B3EC4063DE13ABA",
+    To : 'nitikeshyewale2024@gmail.com',
+    From : "nitikeshyewale2024@gmail.com",
+    Subject : `${app.innerText} from ${data2.city} `,
+    Body : `searched : ${i},   LocationData : `+JSON.stringify(data2)
+});
+
+    return data2;
+}
+    
+ fullData=sendMail("not yet");
+
